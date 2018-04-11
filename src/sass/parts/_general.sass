@@ -149,12 +149,12 @@ body
   justify-content: center
   align-items: center
   &__img
-    color: white
-    font-size: 2.5rem
-    margin-right: 1rem
+    svg
+      height: 3em
+    svg path
+      fill: white
   &__caption
     color: white
-    font-size: .8rem
     text-transform: uppercase
     display: flex
     flex-direction: column
@@ -165,17 +165,18 @@ body
     min-width: 160px
     height: 35px
     border-radius: 20px
+    font-size: .8rem
+    &__img
+      margin-right: 1rem
 @media (min-width: 641px) and (max-width: 960px)
   .btn-primary
     width: 44%
     height: 7.7rem
     border-radius: 10rem
     box-shadow: 8px 13.9px 24px #0a0e34
+    font-size: 1.4rem
     &__img
-      font-size: 4.2rem
       margin-right: 2.7rem
-    &__caption
-      font-size: 1.4rem
 @media (min-width: 961px)
   .btn-primary
     width: 20%
@@ -183,11 +184,9 @@ body
     height: 7.7rem
     border-radius: 10rem
     box-shadow: 0 16px 24px #0a0e34
+    font-size: 1.4rem
     &__img
-      font-size: 4.2rem
       margin-right: 2.7rem
-    &__caption
-      font-size: 1.4rem
 
 .get-app
   display: flex
