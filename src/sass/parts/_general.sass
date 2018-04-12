@@ -18,7 +18,7 @@ body
   @media (min-width: 641px) and (max-width: 960px)
     padding: 0 32px
   @media (min-width: 961px)
-    padding: 0 16%
+    padding: 0 13%
 
 .section-title
   text-transform: uppercase
@@ -66,32 +66,26 @@ body
 .main
   background: #000 url($root + 'public/images/main_bg_768.png') no-repeat center center
   background-size: cover
-@media (max-width: 640px)
-  .main
+  @media (max-width: 640px)
     &__get-app
       margin-top: 87px
     &__info
       margin-top: 96px
       padding-bottom: 80px
-@media (min-width: 641px) and (max-width: 960px)
-  .main
+  @media (min-width: 641px) and (max-width: 960px)
     background-image: url($root + 'public/images/main_bg_768.png')
     &__info
       margin-top: 130px
       padding-bottom: 80px
     &__get-app
       margin-top: 300px
-@media (min-width: 961px)
-  .main
+  @media (min-width: 961px)
     background-image: url($root + 'public/images/main_bg_1920.png')
     &__info
       margin-top: 232px
       padding-bottom: 94px
     &__get-app
       margin-top: 205px
-  .padding
-    padding-left: 9%
-    padding-right: 9%
 
 
 .header
@@ -115,31 +109,22 @@ body
   margin: 0
   &__first-row, &__second-row
     display: block
+  &__second-row
+    text-align: right
 @media (max-width: 640px)
   .site-title
     font-size: 2.8rem
     line-height: 1.2
-    &__first-row
-      margin-left: 0
     &__second-row
       margin-top: 18px
-      margin-left: 14%
 @media (min-width: 641px) and (max-width: 960px)
   .site-title
     font-size: 6.4rem
     line-height: 1.2
-    &__first-row
-      margin-left: 6.5%
-    &__second-row
-      margin-left: 21%
 @media (min-width: 961px)
   .site-title
     font-size: 9rem
     line-height: 1.1
-    &__first-row
-      margin-left: 1%
-    &__second-row
-      margin-left: 29.5%
 
 
 
