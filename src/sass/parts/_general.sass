@@ -7,7 +7,6 @@
 html
   font-size: 62.5%
 body
-  //min-width: 320px
   font: $font_size 'Open Sans', sans-serif
   margin: 0
   padding: 0
@@ -19,6 +18,20 @@ body
     padding: 0 32px
   @media (min-width: 961px)
     padding: 0 13%
+
+.container
+  @media (max-width: 640px)
+    padding-left: 20px
+    padding-right: 20px
+  @media (min-width: 641px) and (max-width: 960px)
+    padding-left: 33px
+    padding-right: 33px
+  @media (min-width: 961px)
+    max-width: 1570px
+    padding-left: 33px
+    padding-right: 33px
+    margin-left: auto
+    margin-right: auto
 
 .section-title
   text-transform: uppercase
@@ -431,6 +444,9 @@ body
         order: 2
       .content-block-2__content
         order: 1
+
+.community__content
+  padding: 0
 
 .underlined
   position: relative
